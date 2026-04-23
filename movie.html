@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CineMax Booking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🎬 CineMax</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Bookings</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h2>Avengers Endgame</h2>
+        <p>Earth's final battle begins.</p>
+        <button onclick="document.querySelector('.movies-section').scrollIntoView({behavior:'smooth'})">
+            Book Now
+        </button>
+    </div>
+</section>
+
+<!-- MOVIES -->
+<section class="movies-section">
+
+<h2 class="section-title">🔥 Now Showing</h2>
+
+<div class="movies-grid">
+
+<div class="movie-card">
+<img src="avengers.jpg.png" alt="Avengers">
+<h3>Avengers</h3>
+<p>₹200</p>
+<button onclick="fillMovie('Avengers')">Book</button>
+</div>
+
+<div class="movie-card">
+<img src="leo.jpg.png" alt="Leo">
+<h3>Leo</h3>
+<p>₹180</p>
+<button onclick="fillMovie('Leo')">Book</button>
+</div>
+
+<div class="movie-card">
+<img src="kgf2.jpg.png" alt="KGF 2">
+<h3>KGF 2</h3>
+<p>₹220</p>
+<button onclick="fillMovie('KGF 2')">Book</button>
+</div>
+
+<div class="movie-card">
+<img src="rrr.jpg.png" alt="RRR">
+<h3>RRR</h3>
+<p>₹230</p>
+<button onclick="fillMovie('RRR')">Book</button>
+</div>
+
+<div class="movie-card">
+<img src="bahubali2.jpg.png" alt="Bahubali 2">
+<h3>Bahubali 2</h3>
+<p>₹250</p>
+<button onclick="fillMovie('Bahubali 2')">Book</button>
+</div>
+
+<div class="movie-card">
+<img src="jawan.jpg.png" alt="Jawan">
+<h3>Jawan</h3>
+<p>₹210</p>
+<button onclick="fillMovie('Jawan')">Book</button>
+</div>
+
+<div class="movie-card">
+<img src="pathaan.jpg.png" alt="Pathaan">
+<h3>Pathaan</h3>
+<p>₹205</p>
+<button onclick="fillMovie('Pathaan')">Book</button>
+</div>
+
+<div class="movie-card">
+<img src="pushpa.jpg.png" alt="Pushpa">
+<h3>Pushpa</h3>
+<p>₹215</p>
+<button onclick="fillMovie('Pushpa')">Book</button>
+</div>
+
+<div class="movie-card">
+<img src="salaar.jpg.png" alt="Salaar">
+<h3>Salaar</h3>
+<p>₹240</p>
+<button onclick="fillMovie('Salaar')">Book</button>
+</div>
+
+<div class="movie-card">
+<img src="animal.jpg.png" alt="Animal">
+<h3>Animal</h3>
+<p>₹225</p>
+<button onclick="fillMovie('Animal')">Book</button>
+</div>
+
+</div>
+
+</section>
+
+<!-- BOOKING -->
+<section class="booking-section">
+
+<div class="booking-box">
+
+<h2>🎟 Book Tickets</h2>
+
+<input type="text" id="movieName" placeholder="Selected Movie" readonly>
+
+<select id="location">
+<option>Select Location</option>
+<option>Bangalore</option>
+<option>Mumbai</option>
+<option>Chennai</option>
+<option>Hyderabad</option>
+<option>Delhi</option>
+</select>
+
+<select id="slot">
+<option>Select Show Slot</option>
+<option>10:00 AM</option>
+<option>1:00 PM</option>
+<option>4:00 PM</option>
+<option>7:00 PM</option>
+<option>10:30 PM</option>
+</select>
+
+<select id="seatType">
+<option>Silver</option>
+<option>Gold</option>
+<option>Platinum</option>
+<option>VIP Recliner</option>
+</select>
+
+<input type="number" placeholder="Tickets">
+
+<select>
+<option>UPI</option>
+<option>Google Pay</option>
+<option>PhonePe</option>
+<option>Paytm</option>
+<option>Card</option>
+</select>
+
+<button>Confirm Booking</button>
+
+</div>
+
+<div class="offer-box">
+<h2>✨ Offers</h2>
+<p>🎁 Flat ₹50 OFF with MOVIE50</p>
+<p>🍿 Free Popcorn on VIP Seats</p>
+<p>💳 Cashback on UPI</p>
+<p>🎬 Weekend Discounts</p>
+<p>⭐ Premium Experience</p>
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
